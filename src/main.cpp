@@ -1,8 +1,12 @@
 #include <iostream>
-#include "google/googleApi.h"
+#include "google/googleMapsApi.h"
 
 int main () {
-    std::cout << "Hello world" << std::endl;
+
+    GoogleMapsAPI api = GoogleMapsAPI();
+
+
+    std::cout << "Hello world" << api.add(7,9) << std::endl;
 
     return 0;
 }
